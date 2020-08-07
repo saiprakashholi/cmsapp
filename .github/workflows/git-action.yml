@@ -10,7 +10,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 8.15.1
-    - name: Build and Deploy
+    - name: Build and Deploy cms
       uses: JamesIves/github-pages-deploy-action@releases/v2
       env:
         ACCESS_TOKEN: ${{ secrets.CMS_SECRET }}
