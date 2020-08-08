@@ -1,0 +1,14 @@
+{
+    "GLOBAL": {
+        "TITLE": " Application name"
+    },
+    "LOGIN": {
+        "TITLE": "This is login page"
+    },
+    "HEADER": {
+        "LINE": "this is HEADER"
+    },
+    "FOOTER": {
+        "LINE": "this is FOOTER"
+    }
+}
