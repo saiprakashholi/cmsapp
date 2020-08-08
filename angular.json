@@ -130,5 +130,8 @@
       }
     }
   },
-  "defaultProject": "cmsapp"
+  "defaultProject": "cmsapp",
+  "cli": {
+    "analytics": "4068c23c-da4e-4f1b-94cd-f3b425c3851d"
+  }
 }
