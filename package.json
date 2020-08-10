@@ -25,6 +25,8 @@
     "@ngx-translate/core": "^13.0.0",
     "@ngx-translate/http-loader": "^6.0.0",
     "angular-cli-ghpages": "^0.6.2",
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
     "rxjs": "~6.6.2",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.3"

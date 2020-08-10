@@ -9,6 +9,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FormsModule } from '@angular/forms';
+import { CmsCommonModule } from '../shared-modules/cms-common/cms-common.module';
 
 
 
@@ -16,7 +17,6 @@ import { FormsModule } from '@angular/forms';
   declarations: [HomeComponent, HeaderComponent, FooterComponent, LoginComponent],
   imports: [
     CommonModule,
-    AngMatModule,
     FormsModule,
     HttpClientModule,
     TranslateModule.forRoot({
@@ -26,7 +26,10 @@ import { FormsModule } from '@angular/forms';
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+
+    AngMatModule, // angular material components 
+    CmsCommonModule, // common module
   ]
 })
 export class CoreModule { }
