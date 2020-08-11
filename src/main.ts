@@ -9,4 +9,5 @@ if (environment.production) {
 }
 
 platformBrowserDynamic().bootstrapModule(AppModule)
+  .then(success => console.log(`CMS App Bootstrap success`))
   .catch(err => console.error(err));
