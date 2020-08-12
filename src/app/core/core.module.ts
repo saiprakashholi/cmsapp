@@ -9,6 +9,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { CmsCommonModule } from '../shared-modules/cms-common/cms-common.module';
 
 
@@ -18,6 +19,7 @@ import { CmsCommonModule } from '../shared-modules/cms-common/cms-common.module'
   imports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     TranslateModule.forRoot({
       defaultLanguage: 'en',

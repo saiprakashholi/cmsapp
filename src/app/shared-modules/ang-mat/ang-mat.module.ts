@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 
 
@@ -12,11 +13,14 @@ import { MatIconModule } from '@angular/material/icon';
     CommonModule,
     MatSliderModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    MatTooltipModule
   ],
   exports: [
     MatSliderModule,
-    MatInputModule
+    MatInputModule,
+    MatIconModule,
+    MatTooltipModule
   ]
 })
 export class AngMatModule { }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'cms-login',
@@ -11,6 +12,16 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  val = "input val"
+
+  // form group
+  userFormG = new FormGroup({
+    username: new FormControl(''),
+    password: new FormControl(''),
+    remember: new FormControl('')
+  });
+
+  userFormGSubmit() {
+    console.log("userFormG: ", this.userFormG)
+  }
 
 }
