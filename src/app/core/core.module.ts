@@ -11,11 +11,14 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CmsCommonModule } from '../shared-modules/cms-common/cms-common.module';
+import { SnackbarComponent } from './components/snackbar/snackbar.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 
 
 
 @NgModule({
-  declarations: [HomeComponent, HeaderComponent, FooterComponent, LoginComponent],
+  declarations: [HomeComponent, HeaderComponent, FooterComponent, LoginComponent, SnackbarComponent, SignupComponent, ForgotPasswordComponent],
   imports: [
     CommonModule,
     FormsModule,

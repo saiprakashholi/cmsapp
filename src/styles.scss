@@ -6,6 +6,8 @@ html, body {
     background-image: url('assets/images/bg_img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+
+    // background-color: black;
  }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
@@ -21,3 +23,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
+
+// snack bar - ang mat 
+.sb_success{
+    color: greenyellow;
+    background-color: grey;
+}
+.sb_error{
+    color: red;
+    background-color: khaki;
+}

@@ -3,7 +3,15 @@
         "TITLE": " Application name"
     },
     "LOGIN": {
-        "TITLE": "This is login page"
+        "signInTitle": "Sign In",
+        "errUsername": "** Username is required",
+        "errPassword": "** Password is required",
+        "password": "Password",
+        "username": "Username",
+        "rememberMe": "Remember Me",
+        "noAcc": "Don't have an account?",
+        "signUp": "Sign Up",
+        "forgotPass": "Forgot your password?"
     },
     "HEADER": {
         "LINE": "this is HEADER"

@@ -2,10 +2,10 @@
     <div class=" row  justify-content-center align-items-center h-100 ">
         <div class="card">
             <div class="card-header">
-                <h3>Sign In</h3>
+                <h3>{{'LOGIN.signInTitle' | translate}}</h3>
                 <div matTooltip="Login with facebook" matTooltipPosition="after"
                     class="d-flex justify-content-end social_icon">
-                    <span><i class="material-icons md-48">facebook</i></span>
+                    <span><i (click)="loginByFb()" class="material-icons md-48">facebook</i></span>
                     <!-- <span><i class="material-icons md-48">facebook</i></span>
                     <span><i class="material-icons md-48">facebook</i></span> -->
                 </div>
@@ -19,12 +19,12 @@
                             </span>
                         </div>
                         <input formControlName="username" type="text" class="form-control"
-                            placeholder="Username">
+                            [placeholder]="'LOGIN.username' | translate">
 
                     </div>
                     <div class="error_msg d-flex justify-content-end"
                         *ngIf="(userFormG.get('username')?.dirty || userFormG.get('username')?.touched) && userFormG.get('username')?.errors?.required">
-                        ** Username is required
+                        {{'LOGIN.errUsername' | translate}}
                     </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
@@ -33,14 +33,15 @@
                             </span>
                         </div>
                         <input formControlName="password" type="Password" class="form-control"
-                            placeholder="Password">
+                            [placeholder]="'LOGIN.password' | translate">
                     </div>
                     <div class="error_msg d-flex justify-content-end"
                         *ngIf="(userFormG.get('password')?.dirty || userFormG.get('password')?.touched) && userFormG.get('password')?.errors?.required">
-                        ** Password is required
+                        {{ 'LOGIN.errPassword' | translate}}
                     </div>
                     <div class="row align-items-center remember">
-                        <input formControlName="remember" type="checkbox">Remember Me
+                        <input formControlName="remember"
+                            type="checkbox">{{'LOGIN.rememberMe' | translate}}
                     </div>
                     <div class="form-group">
                         <input type="submit" value="Login" class="btn float-right login_btn">
@@ -49,10 +50,11 @@
             </div>
             <div class="card-footer">
                 <div class="d-flex justify-content-center links">
-                    Don't have an account?<a href="#">Sign Up</a>
+                    {{'LOGIN.noAcc' | translate}}<a
+                        href="./signup">{{'LOGIN.signUp' | translate}}</a>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <a href="#">Forgot your password?</a>
+                    <a href="./forgotpassword">{{ 'LOGIN.forgotPass' | translate}}</a>
                 </div>
             </div>
         </div>
