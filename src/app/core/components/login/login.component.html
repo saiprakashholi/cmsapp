@@ -22,6 +22,10 @@
                             placeholder="Username">
 
                     </div>
+                    <div class="error_msg d-flex justify-content-end"
+                        *ngIf="(userFormG.get('username')?.dirty || userFormG.get('username')?.touched) && userFormG.get('username')?.errors?.required">
+                        ** Username is required
+                    </div>
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text">
@@ -30,6 +34,10 @@
                         </div>
                         <input formControlName="password" type="Password" class="form-control"
                             placeholder="Password">
+                    </div>
+                    <div class="error_msg d-flex justify-content-end"
+                        *ngIf="(userFormG.get('password')?.dirty || userFormG.get('password')?.touched) && userFormG.get('password')?.errors?.required">
+                        ** Password is required
                     </div>
                     <div class="row align-items-center remember">
                         <input formControlName="remember" type="checkbox">Remember Me

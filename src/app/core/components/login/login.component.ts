@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'cms-login',
@@ -15,13 +15,23 @@ export class LoginComponent implements OnInit {
 
   // form group
   userFormG = new FormGroup({
-    username: new FormControl(''),
-    password: new FormControl(''),
+    username: new FormControl('', Validators.required),
+    password: new FormControl('', Validators.required),
     remember: new FormControl('')
   });
 
   userFormGSubmit() {
-    console.log("userFormG: ", this.userFormG)
+    this.userFormG.markAllAsTouched();
+
+    if (this.userFormG.valid) {
+      console.log("userFormG: ", this.userFormG)
+    } else {
+      console.log("Form invalid")
+    }
+
   }
+
+
+
 
 }
