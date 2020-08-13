@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './core/components/home/home.component';
 import { LoginComponent } from './core/components/login/login.component';
 import { SignupComponent } from './core/components/signup/signup.component';
 import { ForgotPasswordComponent } from './core/components/forgot-password/forgot-password.component';
+import { CanLoadGaurd } from './core/guards/can-load.guard';
 
 
 const routes: Routes = [
@@ -15,6 +15,11 @@ const routes: Routes = [
   },
   {
     path: "forgotpassword", component: ForgotPasswordComponent
+  },
+  {
+    path: 'admin',
+    loadChildren: () => import('./feature-modules/admin/admin.module').then(m => m.AdminModule),
+    canLoad: [CanLoadGaurd]
   }
 ];
 

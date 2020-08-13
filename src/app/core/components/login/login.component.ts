@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { SnackbarService } from '../../services/snackbar.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'cms-login',
@@ -9,7 +10,7 @@ import { SnackbarService } from '../../services/snackbar.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private sbService: SnackbarService) { }
+  constructor(private sbService: SnackbarService, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -27,6 +28,8 @@ export class LoginComponent implements OnInit {
     if (this.userFormG.valid) {
       console.log("userFormG: ", this.userFormG)
       this.sbService.success("Login success")
+      this.router.navigateByUrl('/admin')
+
     } else {
       console.log("Form invalid")
     }
