@@ -20,6 +20,16 @@ const routes: Routes = [
     path: 'admin',
     loadChildren: () => import('./feature-modules/admin/admin.module').then(m => m.AdminModule),
     canLoad: [CanLoadGaurd]
+  },
+  {
+    path: 'std',
+    loadChildren: () => import('./feature-modules/student/student.module').then(m => m.StudentModule),
+    canLoad: [CanLoadGaurd]
+  },
+  {
+    path: 'staff',
+    loadChildren: () => import('./feature-modules/staff/staff.module').then(m => m.StaffModule),
+    canLoad: [CanLoadGaurd]
   }
 ];
 
