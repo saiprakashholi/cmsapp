@@ -17,7 +17,14 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
 
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent, LoginComponent, SnackbarComponent, SignupComponent, ForgotPasswordComponent],
+  declarations: [
+    HeaderComponent,
+    FooterComponent,
+    LoginComponent,
+    SnackbarComponent,
+    SignupComponent,
+    ForgotPasswordComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,
@@ -34,6 +41,14 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
 
     AngMatModule, // angular material components 
     CmsCommonModule, // common module
+  ],
+  exports: [
+    HeaderComponent,
+    FooterComponent,
+    LoginComponent,
+    SnackbarComponent,
+    SignupComponent,
+    ForgotPasswordComponent
   ]
 })
 export class CoreModule { }
