@@ -1,0 +1,25 @@
+{
+    "GLOBAL": {
+        "TITLE": " Application name"
+    },
+    "BUTTON": {
+        "login": "Login"
+    },
+    "LOGIN": {
+        "signInTitle": "Sign In",
+        "errUsername": "** Username is required",
+        "errPassword": "** Password is required",
+        "password": "Password",
+        "username": "Username",
+        "rememberMe": "Remember Me",
+        "noAcc": "Don't have an account?",
+        "signUp": "Sign Up",
+        "forgotPass": "Forgot your password?"
+    },
+    "HEADER": {
+        "LINE": "this is HEADER"
+    },
+    "FOOTER": {
+        "LINE": "this is FOOTER"
+    }
+}

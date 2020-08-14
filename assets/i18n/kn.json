@@ -1,0 +1,25 @@
+{
+    "GLOBAL": {
+        "TITLE": " Application name"
+    },
+    "BUTTON": {
+        "login": "ಲಾಗಿನ್"
+    },
+    "LOGIN": {
+        "signInTitle": "ಸೈನ್ ಇನ್ ಮಾಡಿ",
+        "errUsername": "** ಬಳಕೆದಾರಹೆಸರು ಅಗತ್ಯವಿದೆ",
+        "errPassword": "** ಗುಪ್ತಪದದ ಅಗತ್ಯವಿದೆ",
+        "password": "ಗುಪ್ತಪದ",
+        "username": "ಬಳಕೆದಾರ ಹೆಸರು",
+        "rememberMe": "ನನ್ನನ್ನು ನೆನಪಿನಲ್ಲಿಡು",
+        "noAcc": "ಖಾತೆ ಇಲ್ಲ?",
+        "signUp": "ಸೈನ್ ಅಪ್ ಮಾಡಿ",
+        "forgotPass": "ನಿಮ್ಮ ಪಾಸ್‌ವರ್ಡ್ ಮರೆತಿರುವಿರಿ?"
+    },
+    "HEADER": {
+        "LINE": "this is HEADER"
+    },
+    "FOOTER": {
+        "LINE": "this is FOOTER"
+    }
+}
